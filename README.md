@@ -30,15 +30,6 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
     --member serviceAccount:$CLOUDBUILD_SA --role roles/editor
 ```
 
-# spinnaker requirements
-Enable Cloud Resource Manager API in GCP project where Spinnaker is hosted.
-
-Add proper Moniker annotations to all deployments. For example:
-
-annotations {
-  "moniker.spinnaker.io/application" = "api" 
-}
-
 ## Configuring your **dev** environment
 
 Just for demostration, this step will:
