@@ -14,3 +14,5 @@ repos:
         args:
           - --hook-config=--path-to-file=README.md # Valid UNIX path. I.e. ../TFDOC.md or docs/README.md etc.
           - --hook-config=--add-to-exiting-file=true # Boolean. true or false
+      - id: terraform_tfsec
+        files: ^infrastructure
